@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>InterTech_1</title>
+  </head>
+  <body bgcolor="#000080">
+    <img
+      id="image"
+      src="https://avatars.mds.yandex.net/i?id=2ec86f796dac9595a79b2f58e7698baf_sr-5916329-images-thumbs&n=13"
+      style="position: absolute; left: 0px; top: 0px"
+    />
+    <script>
+      window.addEventListener("load", function () {
+        var img = document.getElementById("image");
+        window.addEventListener("mousemove", (e) => {
+          img.style.left = e.pageX - 50 + "px";
+          img.style.top = e.pageY - 50 + "px";
+        });
+      });
+    </script>
+  </body>
+</html>
