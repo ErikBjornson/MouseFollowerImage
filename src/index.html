@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>InterTech_1</title>
+  </head>
+  <body bgcolor="#000080">
+    <img
+      id="image"
+      src="/assets/cat.png"
+      style="position: absolute; left: 0px; top: 0px"
+    />
+    <script>
+      window.addEventListener("load", function () {
+        var img = document.getElementById("image");
+        window.addEventListener("mousemove", (e) => {
+          img.style.left = e.pageX - (img.clientWidth / 2) + "px";
+          img.style.top = e.pageY - (img.clientHeight / 2) + "px";
+        });
+      });
+    </script>
+  </body>
+</html>
